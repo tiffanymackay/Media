@@ -109,6 +109,7 @@ iframe {
 /*---------Button Styles---------*/
 .button {
     background-color: #FF66C3;
+    color: #000;
     margin: 0 auto;
     display: block;
     padding: 10px 20px;

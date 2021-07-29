@@ -170,7 +170,7 @@ iframe {
 }
 
 /*---------Responsive Styles---------*/
-@media (max-width:780px) {
+@media only screen and (max-width:780px) {
     .artist-song {
         grid-column-start: 1;
         grid-row-start: 2;   
@@ -187,7 +187,7 @@ iframe {
         grid-column-end: -1;
     }
 }
-@media (max-width:400px) {
+@media only screen and (max-width:400px) {
     .player {
         padding: 10px 0px 80px 0px;
     }

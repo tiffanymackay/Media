@@ -1,0 +1,196 @@
+@charset "UTF-8";
+/* CSS Document by Tiffany Mackay */
+/*---------CSS Reset---------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*---------Global Styles---------*/
+
+html {
+    background: radial-gradient(circle at 10% 20%, rgb(248, 219, 219) 0%, rgb(229, 248, 250) 90%);
+}
+a img {
+    width: 30px;
+}
+h1.hidden {
+    visibility: hidden;
+}
+h2 {
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+}
+h3 {
+    font-family: Staatliches;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 60px;
+}
+h4 {
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 50px;
+
+}
+div > img {
+    width: 150px;
+}
+small {
+    font-family: Space Mono;
+    font-weight: lighter;
+    color: gray;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 20px;
+}
+
+/*---------Audio Styles---------*/
+iframe {
+    display: flex;
+    margin: auto;
+    padding: 0px;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 80%;
+    height: 300px;
+}
+
+/*---------Button Styles---------*/
+.button {
+    background-color: #FF66C3;
+    margin: 0 auto;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: Space Mono;
+    transition: all 200ms ease;
+    font-size: 18px;
+    cursor:pointer;
+    outline: none;
+    border: 0;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    width: 100px;
+}
+.button:hover {
+    transition: 0.3s ease;
+    background-color: #E5F7FA;
+}
+.button:active {
+    background-color: #E5F7FA;
+    box-shadow: 0 5px #eee;
+    transform: translateY(4px);
+}
+
+/*---------Class Styles---------*/
+.container {
+    background: #FFF8F8;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin: 20px auto;
+    display: block;
+    max-width: 1000px;
+    width: 80%;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.player {
+    padding: 10px 80px 20px;
+}
+.song {
+    display: grid; 
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+}
+.record {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    padding: 0px 0px 10px 10px;
+    text-align: center;
+
+}
+.artist-song {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    padding: 0px 50px 0px 0px;
+}
+
+/*---------Responsive Styles---------*/
+@media (max-width:780px) {
+    .artist-song {
+        grid-column-start: 1;
+        grid-row-start: 2;   
+        padding: 0px; 
+        grid-column-end: -1;
+        text-align: center;
+    }
+    
+    .record {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        padding: 0px 0px 10px 10px;
+        text-align: center;
+        grid-column-end: -1;
+    }
+}
+@media (max-width:400px) {
+    .player {
+        padding: 10px 0px 80px 0px;
+    }
+
+}
+    
